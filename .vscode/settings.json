@@ -1,0 +1,4 @@
+{
+  "dotnet.defaultSolution": "ProjectMangementSystem/ProjectMangementSystem.sln",
+  "files.autoSave": "onFocusChange"
+}
