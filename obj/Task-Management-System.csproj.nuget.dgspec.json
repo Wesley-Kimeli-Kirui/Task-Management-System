@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Wesley\\Desktop\\Project Management System\\ProjectMangementSystem\\ProjectMangementSystem.csproj": {}
+    "/home/petrolhead/Documents/Task-Management-System/Task-Management-System.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Wesley\\Desktop\\Project Management System\\ProjectMangementSystem\\ProjectMangementSystem.csproj": {
+    "/home/petrolhead/Documents/Task-Management-System/Task-Management-System.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Wesley\\Desktop\\Project Management System\\ProjectMangementSystem\\ProjectMangementSystem.csproj",
-        "projectName": "ProjectMangementSystem",
-        "projectPath": "c:\\Users\\Wesley\\Desktop\\Project Management System\\ProjectMangementSystem\\ProjectMangementSystem.csproj",
-        "packagesPath": "C:\\Users\\Wesley\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Wesley\\Desktop\\Project Management System\\ProjectMangementSystem\\obj\\",
+        "projectUniqueName": "/home/petrolhead/Documents/Task-Management-System/Task-Management-System.csproj",
+        "projectName": "Task-Management-System",
+        "projectPath": "/home/petrolhead/Documents/Task-Management-System/Task-Management-System.csproj",
+        "packagesPath": "/home/petrolhead/.nuget/packages/",
+        "outputPath": "/home/petrolhead/Documents/Task-Management-System/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Wesley\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/petrolhead/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -38,6 +38,14 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlserver": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -61,7 +69,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.400/RuntimeIdentifierGraph.json"
         }
       }
     }

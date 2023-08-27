@@ -1,0 +1,5 @@
+/home/petrolhead/Documents/Task-Management-System/obj/Debug/net7.0/Task-Management-System.csproj.AssemblyReference.cache
+/home/petrolhead/Documents/Task-Management-System/obj/Debug/net7.0/Task-Management-System.GeneratedMSBuildEditorConfig.editorconfig
+/home/petrolhead/Documents/Task-Management-System/obj/Debug/net7.0/Task-Management-System.AssemblyInfoInputs.cache
+/home/petrolhead/Documents/Task-Management-System/obj/Debug/net7.0/Task-Management-System.AssemblyInfo.cs
+/home/petrolhead/Documents/Task-Management-System/obj/Debug/net7.0/Task-Management-System.csproj.CoreCompileInputs.cache
