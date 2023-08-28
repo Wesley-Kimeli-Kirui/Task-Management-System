@@ -3,6 +3,6 @@ namespace TaskManagementApp.Models {
         public int Id {get; set; }
         public string name {get; set; }
 
-        public ICollection<Task> Tasks {get; set; }
+        public ICollection<Tasker> Tasks {get; set; }
     }
 }

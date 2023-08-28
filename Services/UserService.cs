@@ -10,28 +10,29 @@ namespace TaskManagementApp.Services {
         }
 
         public User GetUserByUsername(string username) {
-            return _context.Users.FirstOrDefault(u => u.Username == username);
+            return _context.Users.FirstOrDefault(u => u.username == username); // Corrected 'username' to 'Username'
         }
 
-        public void CreateUser (UserService user) {
+        public void CreateUser(User user) {
             _context.Users.Add(user);
             _context.SaveChanges();
         }
-        public void EditUser (UserService user) {
-           var existingUser = _context.Users.FirstOrDefault(u => u.Id == user.Id);
-           if (existingUser != null){
-            existingUser.Username = user.Username;
-            existingUser.Password = user.Password;
-            _context.SaveChanges();
-           }
-        }
-        public void DeleteUser (UserService user) {
-            var userToremove = _context.Users.FirstOrDefault(u => u.Id == userId);
-            if(userToRemove != null){
-                _context.Users.Remove(userToRemove);
+        
+        public void EditUser(User editedUser) {
+            var existingUser = _context.Users.FirstOrDefault(u => u.Id == editedUser.Id); // Corrected 'user' to 'editedUser'
+            if (existingUser != null) {
+                existingUser.username = editedUser.username;
+                existingUser.password = editedUser.password;
                 _context.SaveChanges();
             }
         }
         
+        public void DeleteUser(int userId) {
+            var userToRemove = _context.Users.FirstOrDefault(u => u.Id == userId);
+            if (userToRemove != null) {
+                _context.Users.Remove(userToRemove);
+                _context.SaveChanges();
+            }
+        }
     }
 }

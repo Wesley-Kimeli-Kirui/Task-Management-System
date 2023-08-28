@@ -4,6 +4,6 @@ namespace TaskManagementApp.Models {
         public string username { get; set; }
         public string password { get; set; }
 
-        public ICollection<Task> Tasks { get; set; }
+        public ICollection<Tasker> Tasks { get; set; }
     }
 }

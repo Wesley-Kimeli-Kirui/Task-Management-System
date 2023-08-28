@@ -1,6 +1,6 @@
 using System.Linq;
-using TaskManagementApp.Data;
 using TaskManagementApp.Models;
+using TaskManagementApp.Data;
 
 namespace TaskManagementApp.Services {
     public class TaskService {
@@ -10,19 +10,19 @@ namespace TaskManagementApp.Services {
             _context = context;
         }
 
-        public Task GetTaskById(int taskId){
+        public Tasker? GetTaskById(int taskId){
             return _context.Tasks.FirstOrDefault(t => t.Id == taskId);
         }
-        public void MarkTaskAsCompleted(Task task){
+        public void MarkTaskAsCompleted(Tasker task){
             task.IsCompleted = true;
             _context.SaveChanges();
         }
-        public void MarkTaskAsinProgress(Task task){
-            task.TaskStatus = TaskStatus.InProgress;
+        public void MarkTaskAsInProgress(Tasker task){
+            task.TaskStatus = Models.TaskStatus.InProgress; // Fully qualify the enum value
             _context.SaveChanges();
         }
-        public void markTaskAsPending(Task task){
-            task.TaskStatus = TaskStatus.Pending;
+        public void MarkTaskAsPending(Tasker task){
+            task.TaskStatus = Models.TaskStatus.Pending; // Fully qualify the enum value
             _context.SaveChanges();
         }
     }

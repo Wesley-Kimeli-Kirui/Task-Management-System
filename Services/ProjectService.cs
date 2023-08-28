@@ -13,7 +13,7 @@ namespace TaskManagementApp.Services {
             return _context.Projects.FirstOrDefault(p => p.Id == projectId);
         }
         public void CreateProject(Project project){
-            _context.Project.Add(project);
+            _context.Projects.Add(project);
             _context.SaveChanges();
         }
         public void UpdateProject(Project project){

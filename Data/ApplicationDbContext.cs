@@ -10,7 +10,7 @@ namespace TaskManagementApp.Data {
             optionBuilder.UseSqlServer("Server=localhost; Database=TaskManagement; User id=SA; Password=S@ndrine1!; Encrypt=True; TrustServerCertificate=True");
         }
         public DbSet<User> Users {get; set; }
-        public DbSet<Task> Tasks {get; set; }
+        public DbSet<Tasker> Tasks {get; set; }
         public DbSet<Project> Projects {get; set; }
     }
 }
