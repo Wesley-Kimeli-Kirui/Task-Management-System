@@ -1,2 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using ManagementData;
+
+ManagementContext context = new ManagementContext();
+// context.Database.EnsureCreated();
